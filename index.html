@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jakes Cars</title>
+    <link rel="stylesheet" href="./css/cars_styling.css">
+    <script src="./js/usedCars.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="search-box">
+            <a href="#">
+                <h1>Jakes Cars</h1>
+            </a>
+            <form id="search-form">
+                <input type="text" placeholder="Search your movie here" id="search-input">
+                <button type="submit" class="search-btn">Search</button>
+            </form>
+        </div>
+
+        <div id="filters" class="filters">
+            <h2>Filters</h2>
+            <div class="years">
+                <h3 id="years">Years</h3>
+                <label for="minYear">min</label>
+                <input type="number" id="min-year" name="minYear" placeholder="e.g., 2010">
+                <p>to</p>
+                <label for="maxYear">max</label>
+                <input type="number" id="max-year" name="maxYear" placeholder="e.g., 2020">
+            </div>
+
+            <div class="brands">
+                <h3 id="brands">Brands</h3>
+                <input type="checkbox" name="brand" id="brand" value="Toyota"> Toyota
+                <input type="checkbox" name="brand" id="brand" value="Honda"> Honda
+                <input type="checkbox" name="brand" id="brand" value="Ford"> Ford
+                <input type="checkbox" name="brand" id="brand" value="Nissan"> Nissan
+                <input type="checkbox" name="brand" id="brand" value="Hyundai"> Hyundai
+                <input type="checkbox" name="brand" id="brand" value="Subaru"> Subaru
+                <input type="checkbox" name="brand" id="brand" value="Mazda"> Mazda
+                <input type="checkbox" name="brand" id="brand" value="Kia"> Kia
+                <input type="checkbox" name="brand" id="brand" value="Dodge"> Dodge
+            </div>
+
+            <div class="m">
+                <h3 id="mileage">Mileage</h3>
+                <label for="minMileage">min</label>
+                <input type="number" name="minMileage" id="minMileage" placeholder="e.g, 20000">
+                <p>to</p>
+                <label for="maxMileage">max</label>
+                <input type="number" name="maxMileage" id="maxMileage" placeholder="e.g, 50000">
+            </div>
+
+            <div class="price">
+                <h3 id="price">Price</h3>
+                <label for="minPrice">min</label>
+                <input type="number" name="minPrice" id="minPrice" placeholder="e.g, 20000">
+                <p>to</p>
+                <label for="maxPrice">max</label>
+                <input type="number" name="maxPrice" id="maxPrice" placeholder="e.g, 50000">
+            </div>
+
+            <div class="colors">
+                <h3 id="color">color</h3>
+                <input type="checkbox" name="Blue" id="color" value="blue"> blue
+                <input type="checkbox" name="White" id="color" value="White"> White
+                <input type="checkbox" name="Black" id="color" value="Black"> Black
+                <input type="checkbox" name="Silver" id="color" value="Silver"> Silver
+                <input type="checkbox" name="Red" id="color" value="Red"> Red
+                <input type="checkbox" name="Gray" id="color" value="Gray"> Gray
+                <input type="checkbox" name="Green" id="color" value="Green"> Green
+            </div>
+        </div>
+        <div id="result"></div>
+    
+    </div>
+</body>
+</html>
+
+

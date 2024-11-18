@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --background-color-primary: #0b0c10;
+    --background-color-secondary: #1f2833;
+    --text-color-primary: #c5c6c7;
+    --text-color-secondary: #66fcf1;
+    --backup-color: #45a29e;
+    --white: #fff;
+
+    background-color: var(--background-color-primary);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+.search-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 100vw;
+    margin: 50px;
+    
+}
+
+.search-box a{
+    text-decoration: none;
+    color: var(--text-color-primary);
+}
+
+.search-box form {
+    display: flex;
+    max-width: 400px;
+}
+
+.search-box input {
+    background-color: var(--white);
+    width: 100%;
+    max-width: 400px;
+    padding: 12px;
+    border-radius: 0.4rem 0 0 0.4rem;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.search-box .search-btn {
+    width: 120px;
+    background-color: var(--text-color-secondary);
+    color: var(--background-color-primary);
+    cursor: pointer;
+    padding: 8px 8px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 0 0.4rem 0.4rem 0;
+    transition: all 0.5s ease;
+}
+
+.search-box .search-btn:hover {
+    background-color: var(--background-color-primary);
+    color: var(--white);
+}
+
+#result{
+    position: relative;
+    bottom:835px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 0 0 400px;
+
+}
+
+.card {
+    border: 1px solid var(--backup-color);
+    color: var(--white);
+    padding: 16px;
+    margin: 16px;
+    height: 400px;
+    width: 400px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.filters {
+    display: flex;
+    flex-direction: column;
+    border: var(--text-color-secondary) solid 1px;
+    justify-content: space-evenly;
+    margin: 20px;
+    height: auto;
+    width: 380px;
+}
+
+.filters h2 {
+    color: var(--white);
+    margin-left: 50px;
+}
+
+.years {
+    margin: 20px;
+    color: var(--white);
+}
+
+.years input {
+    background-color: var(--white);
+}
+
+.brands {
+    margin: 0px 20px;
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    border: 1px solid var(--text-color-secondary);
+    color: var(--white);
+}
+
+.m {
+    margin: 0px 20px;
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.m input {
+    background-color: var(--white);
+}
+
+.price {
+    margin: 0px 20px;
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+}
+
+.price input {
+    background-color: var(--white);
+}
+
+.colors {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-size: 15px;
+    color: var(--white);
+    margin: 20px;
+    border: 1px solid var(--text-color-secondary);
+
+}
